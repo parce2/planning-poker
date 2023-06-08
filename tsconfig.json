@@ -2,8 +2,43 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "@components/*": [
+        "app/components/*"
+      ],
+      "@atoms/*": [
+        "app/components/atoms/*"
+      ],
+      "@molecules/*": [
+        "app/components/molecules/*"
+      ],
+      "@organisms/*": [
+        "app/components/organisms/*"
+      ],
+      "@core/*": [
+        "app/core/*"
+      ],
+      "@pages/*": [
+        "app/pages/*"
+      ],
+      "@shared/*": [
+        "app/shared/*"
+      ],
+      "@styles/*": [
+        "app/styles/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@environment/*": [
+        "environments/*"
+      ],
+      "@tests/*": [
+        "tests/*"
+      ]
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
