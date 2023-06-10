@@ -11,6 +11,9 @@
       "@atoms/*": [
         "app/components/atoms/*"
       ],
+      "@consts-atom/*": [
+        "app/components/atoms/consts/*"
+      ],
       "@molecules/*": [
         "app/components/molecules/*"
       ],

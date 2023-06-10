@@ -5,8 +5,6 @@
 .a-button {
   display: inline-block;
   padding: 7px 8px;
-  background-color: $coconut;
-  color: $purple;
   font-size: 16px;
   border: none;
   border-radius: 52px;
@@ -15,6 +13,17 @@
   cursor: pointer;
   user-select: none;
 
+  &--primary {
+    background-color: $coconut;
+    color: $purple;
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 3px solid $coconut;
+    color: $coconut;
+  }
+
   &:disabled  {
     background-color: $gray;
     cursor: not-allowed;
@@ -22,9 +31,10 @@
   }
 
   @include media-query($medium) {
-    padding: 8px 16px;
+    padding: 5px 16px;
     font-size: 14px;
     width: 120px;
     height: 30px;
   }
 }
+
