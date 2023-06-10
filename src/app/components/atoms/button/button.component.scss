@@ -1,0 +1,23 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/_variables.scss";
+
+.a-button {
+  display: inline-block;
+  padding: 7px 8px;
+  font-style: normal;
+  font-weight: 600;
+  background-color: $coconut;
+  color: $purple;
+  font-size: 16px;
+  border: none;
+  border-radius: 52px;
+  width: 148px;
+  height: 35px;
+  cursor: pointer;
+
+  @include media-query($medium) {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: $purple;
+  }
+}

@@ -4,7 +4,8 @@ import { MoleculesModule } from "@molecules/molecules.module";
 import { OrganismsModule } from "@organisms/organisms.module";
 
 @NgModule({
-  imports: [AtomsModule, MoleculesModule, OrganismsModule ]
+  imports: [AtomsModule, MoleculesModule, OrganismsModule ],
+  exports: [AtomsModule, MoleculesModule, OrganismsModule]
 })
 
 export class ComponentModule {}
