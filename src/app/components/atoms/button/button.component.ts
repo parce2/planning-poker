@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { AcceptedClass } from '@components/atoms/consts/type/button-class.type';
 @Component({
   selector: 'a-button',
   templateUrl: './button.component.html',
@@ -8,5 +7,5 @@ import { AcceptedClass } from '@components/atoms/consts/type/button-class.type';
 
 export class ButtonComponent {
   @Input() disabled: boolean = false;
-  @Input() customClass: AcceptedClass = 'a-button a-button--primary';
+  @Input() customClass: string = 'a-button a-button--primary';
 }
