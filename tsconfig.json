@@ -37,7 +37,7 @@
       ],
       "@tests/*": [
         "tests/*"
-      ]
+      ],
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
