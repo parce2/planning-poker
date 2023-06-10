@@ -1,0 +1,20 @@
+@import '_mixins';
+@import '_variables';
+
+.a-input {
+  width: 292px;
+  height: 33px;
+  color: white;
+  border-radius: 100px;
+  padding: 3px 10px;
+  border: 1px solid #BB65FF;
+  background-color: rgba(100, 41, 205, 0.08);
+  outline: none;
+  font-size: 14px;
+  caret-color: transparent;
+
+  &:focus {
+    border: 1px solid #ab63e1;
+    outline: none;
+  }
+}
