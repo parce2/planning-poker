@@ -38,8 +38,6 @@
       "@tests/*": [
         "tests/*"
       ],
-      "@mixins/*": ["src/app/styles/mixins.scss"],
-      "@variables/*": ["src/app/styles/_variables.scss"]
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,

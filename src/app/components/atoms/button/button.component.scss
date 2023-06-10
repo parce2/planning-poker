@@ -1,4 +1,6 @@
-@import '../../../styles/index.scss';
+
+@import 'mixins';
+@import '_variables';
 
 .a-button {
   display: inline-block;
