@@ -1,5 +1,4 @@
-
-@import 'app/styles/index.scss';
+@import "app/styles/index.scss";
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
 html, 
@@ -8,6 +7,6 @@ body {
   padding: 0;
   border: 0;
   background-color: $purple;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
