@@ -1,5 +1,5 @@
 <article class="a-card">
-  <section (click)="vote()" [ngClass]="{'voting-card':status }" class="a-card__inner">
+  <section (click)="vote()" [class.a-card__voting]="status" class="a-card__inner">
     <div *ngIf="revelation" class="a-card__content">
       <ng-template [ngIf]="coffee" [ngIfElse]="content">
         <img src="assets/icon/coffee.svg" alt="">

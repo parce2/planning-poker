@@ -1,6 +1,6 @@
 <div class="a-user">
   <div class="a-user-circle a-user-circle">
-    <span [ngClass]="{'a-user-circle__initials': true, 'small': isSmall}">
+    <span class="a-user-circle__initials" [class.small]="isSmall">
       {{ initials }}
     </span>
   </div>
