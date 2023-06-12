@@ -5,6 +5,7 @@ import { InputComponent } from "./input/input.component";
 import { CardComponent } from "./card/card.component";
 import { InputCheckboxComponent } from "./input-checkbox/input-checkbox.component";
 import { ModalComponent } from "./modal/modal.component";
+import { FormErrorsComponent } from './errors/form-errors/form-errors.component';
 @NgModule({
   declarations: [
     AlertComponent,
@@ -12,7 +13,8 @@ import { ModalComponent } from "./modal/modal.component";
     CardComponent,
     InputComponent,
     InputCheckboxComponent,
-    ModalComponent
+    ModalComponent,
+    FormErrorsComponent
   ],
   exports: [ AlertComponent,
     ButtonComponent,
