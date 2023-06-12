@@ -1,0 +1,10 @@
+<div class="a-user">
+  <div class="a-user-circle a-user-circle">
+    <span [ngClass]="{'a-user-circle__initials': true, 'small': isSmall}">
+      {{ initials }}
+    </span>
+  </div>
+  <h6 *ngIf="name" class="a-user-name">
+    {{ name }}
+  </h6>
+</div>
