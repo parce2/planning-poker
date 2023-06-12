@@ -1,5 +1,5 @@
 <div *ngIf="control.invalid && (control.dirty || control.touched)">
-  <div *ngFor="let errorMessage of errorMessages">
+  <div *ngFor="let errorMessage of errorsMessages">
     <div>{{ errorMessage }}</div>
   </div>
 </div>

@@ -1,9 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
 import { errorMessages } from '@components/atoms/consts/errors/input-form.errors';
-
 @Component({
-  selector: 'app-form-errors',
+  selector: 'a-form-errors',
   templateUrl: './form-errors.component.html',
   styleUrls: ['./form-errors.component.scss']
 })

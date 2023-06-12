@@ -6,6 +6,8 @@ import { CardComponent } from "./card/card.component";
 import { InputCheckboxComponent } from "./input-checkbox/input-checkbox.component";
 import { ModalComponent } from "./modal/modal.component";
 import { FormErrorsComponent } from './errors/form-errors/form-errors.component';
+import { UserCircleComponent } from './user-circle/user-circle.component';
+import { CommonModule } from "@angular/common";
 @NgModule({
   declarations: [
     AlertComponent,
@@ -14,14 +16,22 @@ import { FormErrorsComponent } from './errors/form-errors/form-errors.component'
     InputComponent,
     InputCheckboxComponent,
     ModalComponent,
-    FormErrorsComponent
+    FormErrorsComponent,
+    UserCircleComponent
   ],
-  exports: [ AlertComponent,
+  imports: [
+    CommonModule
+  ],
+  exports: [
+    AlertComponent,
     ButtonComponent,
     CardComponent,
     InputComponent,
     InputCheckboxComponent,
-    ModalComponent]
+    ModalComponent,
+    UserCircleComponent,
+    UserCircleComponent
+  ]
 })
 
 export class AtomsModule {}
