@@ -1,3 +1,42 @@
-@import "../../../styles/mixins.scss";
-@import "../../../styles/_variables.scss";
+@import '_mixins';
+@import '_variables';
 
+.a-card {
+  width: 60px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 2px #BB65FF solid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  &__content {
+    color: $white;
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    color: $white;
+    font-size: 23px;
+  }
+
+}
+
+.voting-card {
+  background: #BB65FF;
+}
+
+.reveal-card {
+  background: none;
+}

@@ -1,7 +1,15 @@
 <article class="a-card">
-  <div class="a-card__inner">
-    <div class="a_card__content">
-      <ng-content ></ng-content>
+  <section (click)="vote()" [ngClass]="{'voting-card':status }" class="a-card__inner">
+    <div *ngIf="revelation" class="a-card__content">
+      <ng-template [ngIf]="coffee" [ngIfElse]="content">
+        <img src="assets/icon/coffee.svg" alt="">
+      </ng-template>
+      <ng-template #content>
+        {{score }}
+      </ng-template>
     </div>
-  </div>
+  </section>
+  <section class="a-card__name">
+    {{name}}
+  </section>
 </article>
