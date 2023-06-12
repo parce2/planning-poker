@@ -7,13 +7,13 @@
   color: $white;
   border-radius: 100px;
   padding: 1px 10px;
-  border: 1px solid #bb65ff;
-  background-color: rgba(100, 41, 205, 0.08);
+  border: 1px solid $purple-tertiary;
+  background-color: $purple;
   outline: none;
   font-size: 14px;
 
   &:focus {
-    border: 1px solid #9120e7;
+    border: 1px solid $purple-tertiary;
   }
 
   @include media-query($medium) {
@@ -31,7 +31,7 @@
   width: 20px;
   height: 20px;
   background-color: $purple;
-  border: 2px solid $purple-secundary;
+  border: 2px solid $purple-tertiary;
   border-radius: 50%;
   margin-right: 5px;
   position: relative;
@@ -55,7 +55,7 @@
 }
 
 .a-input[type="radio"]:checked::before {
-  background-color: $purple-secundary;
+  background-color: $purple-tertiary;
 }
 
 

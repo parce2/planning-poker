@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ModalService } from '@core/services/utilities/modal.service';
 
 @Component({
@@ -8,12 +8,18 @@ import { ModalService } from '@core/services/utilities/modal.service';
 })
 export class ModalComponent {
 
+  @Input() title!: string;
+
   public isOpen = false;
 
   constructor(private modalService: ModalService) {
     this.modalService.openModal$.subscribe(isOpen => {
       this.isOpen = isOpen;
     });
+  }
+
+  public closeModal() {
+    this.modalService.closeModal();
   }
 
 }
