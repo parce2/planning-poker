@@ -1,1 +1,11 @@
-<p>modal works!</p>
+<div class="modal modal--open" [class.modal--open]="isOpen">
+  <div class="modal__container">
+    <div class="modal__header" *ngIf="title">
+      <h4 class="modal__title">{{ title }}</h4>
+      <button class="modal__close-button" (click)="closeModal()">X</button>
+    </div>
+    <div class="modal__content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
