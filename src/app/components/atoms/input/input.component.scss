@@ -1,20 +1,25 @@
-@import '_mixins';
-@import '_variables';
+@import "_mixins";
+@import "_variables";
 
 .a-input {
   width: 292px;
-  height: 33px;
+  height: 32px;
   color: white;
   border-radius: 100px;
-  padding: 3px 10px;
-  border: 1px solid #BB65FF;
+  padding: 1px 10px;
+  border: 1px solid #bb65ff;
   background-color: rgba(100, 41, 205, 0.08);
   outline: none;
   font-size: 14px;
-  caret-color: transparent;
 
   &:focus {
-    border: 1px solid #ab63e1;
-    outline: none;
+    border: 1px solid #9120e7;
+  }
+
+  @include media-query($medium) {
+    padding: 5px 16px;
+    font-size: 14px;
+    width: 210px;
+    height: 30px;
   }
 }

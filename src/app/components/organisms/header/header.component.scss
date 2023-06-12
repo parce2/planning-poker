@@ -1,5 +1,5 @@
 @import "_variables";
-
+@import '_mixins';
 .header {
   display: flex;
   align-items: center;
@@ -21,11 +21,19 @@
     font-size: 19px;
     color: $white;
   }
-  
+
   &__right {
     display: flex;
     align-items: center;
     gap: 20px;
+  }
+
+  @include media-query($medium) {
+    padding: 24px 10px;
+
+    a-button {
+      display: none
+    }
   }
 }
 
