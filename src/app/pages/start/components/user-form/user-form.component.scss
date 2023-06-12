@@ -1,0 +1,29 @@
+@import "_variables";
+@import "_mixins";
+
+.form {
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+
+    &--inline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &--button {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    &__label {
+        color: $white;
+    }
+
+}
+

@@ -4,7 +4,7 @@
 .a-input {
   width: 292px;
   height: 32px;
-  color: white;
+  color: $white;
   border-radius: 100px;
   padding: 1px 10px;
   border: 1px solid #bb65ff;
@@ -23,3 +23,40 @@
     height: 30px;
   }
 }
+
+.a-input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: $purple;
+  border: 2px solid $purple-secundary;
+  border-radius: 50%;
+  margin-right: 5px;
+  position: relative;
+  padding: 4px;
+  box-sizing: border-box;
+  margin-bottom: -4px;
+}
+
+.a-input[type="radio"]::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 2px solid $purple;
+}
+
+.a-input[type="radio"]:checked::before {
+  background-color: $purple-secundary;
+}
+
+
+
