@@ -1,0 +1,46 @@
+@import "_variables";
+@import '_mixins';
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  &__left {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+
+  &__center {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 19px;
+    color: $white;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @include media-query($medium) {
+    padding: 24px 10px;
+
+    a-button {
+      display: none
+    }
+  }
+}
+
+
+
+
+
+
+
+
