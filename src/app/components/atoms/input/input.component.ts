@@ -1,6 +1,5 @@
 import { Component, Input, forwardRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-
 @Component({
   selector: 'a-input',
   templateUrl: './input.component.html',
@@ -34,5 +33,4 @@ export class InputComponent implements ControlValueAccessor {
   registerOnTouched(fn: any): void {}
 
   setDisabledState(isDisabled: boolean): void {}
-
 }

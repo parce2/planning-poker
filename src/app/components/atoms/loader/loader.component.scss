@@ -1,0 +1,102 @@
+$ball-size:20px;
+$ball-color:#333;
+$animation-duration:3s;
+
+@keyframes ball-animation-1{
+0%,50%{
+transform:translateX(0) scale(1.5) rotate(0deg);
+}
+66.67%{
+transform:translateX(#{$ball-size*2}) scale(1.5) rotate(120deg);
+}
+83.33%{
+transform:translateX(#{$ball-size*4}) scale(1.5) rotate(240deg);
+}
+100%{
+transform:translateX(#{$ball-size*6}) scale(1) rotate(360deg);
+}
+}
+
+@keyframes ball-animation-2{
+0%{
+transform:translateX(0) rotate(0deg);
+}
+16.67%{
+transform:translateX(#{$ball-size*2}) rotate(120deg);
+}
+33.33%{
+transform:translateX(#{$ball-size*4}) rotate(240deg);
+}
+50%{
+transform:translateX(#{$ball-size*6}) rotate(360deg);
+}
+100%{
+transform:translateX(#{$ball-size*6});
+}
+}
+
+@keyframes ball-animation-3{
+0%{
+transform:translateX(0) rotate(0deg);
+}
+16.67%{
+transform:translateX(-#{$ball-size*2}) rotate(120deg);
+}
+33.33%{
+transform:translateX(-#{$ball-size*4}) rotate(240deg);
+}
+50%{
+transform:translateX(-#{$ball-size*6}) rotate(360deg);
+}
+100%{
+transform:translateX(-#{$ball-size*6});
+}
+}
+
+@keyframes ball-animation-4{
+0%,50%{
+transform:translateX(-#{$ball-size*4}) rotate(0deg);
+}
+66.67%{
+transform:translateX(-#{$ball-size*2}) rotate(120deg);
+}
+83.33%{
+transform:translateX(0) rotate(240deg);
+}
+100%{
+transform:translateX(#{$ball-size*2}) rotate(360deg);
+}
+}
+
+.loader{
+display:flex;
+}
+
+.ball{
+width:$ball-size;
+height:$ball-size;
+margin-right:30px;
+border-radius:50%;
+background-color:transparent;
+border:3px solid #6429CD;
+transform-origin:center;
+animation-duration:$animation-duration;
+animation-timing-function:cubic-bezier(.17,.67,.83,.67);
+animation-iteration-count:infinite;
+
+&:nth-child(1){
+animation-name:ball-animation-1;
+}
+
+&:nth-child(2){
+animation-name:ball-animation-2;
+}
+
+&:nth-child(3){
+animation-name:ball-animation-3;
+}
+
+&:nth-child(4){
+animation-name:ball-animation-4;
+}
+}

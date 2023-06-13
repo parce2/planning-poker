@@ -1,5 +1,5 @@
-@import '_mixins';
-@import '_variables';
+@import "_mixins";
+@import "_variables";
 
 .oval {
   position: relative;
@@ -30,10 +30,8 @@
     border-radius: 283px;
     box-shadow: 0 0 15px 0px $purple-secundary;
   }
-}
 
-@include media-query-min(768px) {
-  .oval {
+  @include media-query-min($medium) {
     transform: rotate(0deg);
   }
 }
