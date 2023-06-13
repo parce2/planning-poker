@@ -1,1 +1,5 @@
-<input [type]="type" class="a-input" [name]="name" [value]="value">
+<ng-container [ngSwitch]="type">
+    <input *ngSwitchCase="'text' || 'number' " class="a-input" [type]="type" [(ngModel)]="value"
+        (ngModelChange)="onChange($event)">
+    <input *ngSwitchCase="'radio'" class="a-input" [name]="name" [type]="type" (change)="onChange(option)">
+</ng-container>

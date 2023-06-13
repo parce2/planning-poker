@@ -5,6 +5,7 @@ import { StartGameComponent } from './components/start-game/start-game.component
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { StartComponent } from './start.component';
 import { StartRoutingModule } from './start.routing';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { StartRoutingModule } from './start.routing';
     CommonModule,
     StartRoutingModule,
     AtomsModule,
+    ReactiveFormsModule
   ]
 })
 export class StartModule { }
