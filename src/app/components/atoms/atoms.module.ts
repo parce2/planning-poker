@@ -7,6 +7,7 @@ import { InputComponent } from "./input/input.component";
 import { ModalComponent } from "./modal/modal.component";
 import { UserCircleComponent } from './user-circle/user-circle.component';
 import { TableComponent } from './table/table.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
     ButtonComponent,
@@ -18,7 +19,9 @@ import { TableComponent } from './table/table.component';
     TableComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     ButtonComponent,

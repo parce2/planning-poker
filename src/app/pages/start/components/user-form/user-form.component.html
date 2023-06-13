@@ -1,24 +1,24 @@
 <a-modal>
-  <form class="form">
+  <form class="form" [formGroup]="initForm">
     <div class="form-group">
       <label class="form-group__label"> Tu nombre </label>
-      <a-input class="form-group__input"></a-input>
+      <a-input formControlName="name" class="form-group__input"></a-input>
     </div>
 
     <div class="form-group--inline">
       <label class="form-group__label">
         Jugador
-        <a-input type="radio" name="option" value="jugador"></a-input>
+        <a-input formControlName="type" type="radio" name="option" option="jugador"></a-input>
       </label>
 
       <label class="form-group__label">
         Espectador
-        <a-input type="radio" name="option" value="espectador"></a-input>
+        <a-input formControlName="type" type="radio" name="option" option="espectador"></a-input>
       </label>
     </div>
 
     <div class="form-group--button">
-      <a-button>Continuar</a-button>
+      <a-button (click)="sendForm()">Continuar</a-button>
     </div>
   </form>
 </a-modal>
