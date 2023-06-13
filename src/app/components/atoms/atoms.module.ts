@@ -6,6 +6,7 @@ import { FormErrorsComponent } from './errors/form-errors/form-errors.component'
 import { InputComponent } from "./input/input.component";
 import { ModalComponent } from "./modal/modal.component";
 import { UserCircleComponent } from './user-circle/user-circle.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
     ButtonComponent,
@@ -16,7 +17,9 @@ import { UserCircleComponent } from './user-circle/user-circle.component';
     UserCircleComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     ButtonComponent,
