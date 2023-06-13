@@ -6,6 +6,7 @@ import { FormErrorsComponent } from './errors/form-errors/form-errors.component'
 import { InputComponent } from "./input/input.component";
 import { ModalComponent } from "./modal/modal.component";
 import { UserCircleComponent } from './user-circle/user-circle.component';
+import { TableComponent } from './table/table.component';
 @NgModule({
   declarations: [
     ButtonComponent,
@@ -13,7 +14,8 @@ import { UserCircleComponent } from './user-circle/user-circle.component';
     InputComponent,
     ModalComponent,
     FormErrorsComponent,
-    UserCircleComponent
+    UserCircleComponent,
+    TableComponent
   ],
   imports: [
     CommonModule
@@ -24,8 +26,9 @@ import { UserCircleComponent } from './user-circle/user-circle.component';
     InputComponent,
     ModalComponent,
     UserCircleComponent,
-    UserCircleComponent
+    UserCircleComponent,
+    TableComponent
   ]
 })
 
-export class AtomsModule {}
+export class AtomsModule { }
