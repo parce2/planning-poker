@@ -1,0 +1,39 @@
+@import '_mixins';
+@import '_variables';
+
+.oval {
+  position: relative;
+  width: 521px;
+  height: 272px;
+  background-color: $deep-purple;
+  border: 1px solid $purple-secundary;
+  border-radius: 276px;
+  transform: rotate(90deg) scale(0.6);
+
+  &__ring-one {
+    position: absolute;
+    top: -13px;
+    left: -17px;
+    width: 555px;
+    height: 298px;
+    border: 2px solid $purple-secundary;
+    border-radius: 280px;
+  }
+
+  &__ring-two {
+    position: absolute;
+    top: -33px;
+    left: -39px;
+    width: 603px;
+    height: 335px;
+    border: 2px solid $purple-secundary;
+    border-radius: 283px;
+    box-shadow: 0 0 15px 0px $purple-secundary;
+  }
+}
+
+@include media-query-min(768px) {
+  .oval {
+    transform: rotate(0deg);
+  }
+}
